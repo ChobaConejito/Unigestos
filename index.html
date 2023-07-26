@@ -1,0 +1,66 @@
+<html>
+    <head>
+      <title>Emoción a emoji</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+        <h3 id="uni3" class="btn btn-warning heading">Unigestos
+        <span>&#129412;</span>
+        <span>&#9995;&#127995;</span>
+        <span>&#128077;&#127995;</span>
+        <span>&#128076;&#127995;</span>
+        <span>&#129310;&#127995;</span>
+        <span>&#129412;</span>
+        </h3>
+  
+        <br><br>
+
+      <p style="font-size: 22px;">Toma una uniselfie de un ungesto para conocer su significado.</p>
+      <p style="font-size: 18px;">El modelo se entrena con los siguientes gestos - </p>
+      <p style="font-size: 30px;">
+        &#9995;&#127995; | &#128077;&#127995; | &#128076;&#127995;
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Vista de la unicámara web - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshot();" id="uni1"  class="btn btn-primary">Capturar uniimagen</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>UniPredicción - </label>
+        <p class="object_name" id="result_object_name"></p>
+        <p class="gesture_icon" id="result_object_gesture_icon"></p>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Uninstantánea - </label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" id="uni2" class="btn btn-success">Predecir el gesto manual</button>
+       </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
+
